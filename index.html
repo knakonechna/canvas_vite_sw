@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDP App</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h3>Welcome to canvas pdp project!</h3>
+        <div id="buttons_container">
+          <button id="upload">Upload Photo</button>
+          <button id="reset" class="reset_button" hidden>Reset Photo</button>
+        </div>
+      </header>
+      <div id="video-container" hidden>
+        <div class="overlay" id="overlay"></div>
+        <div class="video-container" >
+          <video id="video" autoplay playsinline></video>
+          <div id="panel" class="panel_button">
+            <button id="take-a-photo">Take a photo</button>
+          </div>
+        </div>
+      </div>
+      <canvas id="photo"></canvas>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
